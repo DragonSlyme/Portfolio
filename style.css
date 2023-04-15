@@ -46,12 +46,17 @@ header > img {
 }
 
 .left-side {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     width: 50vw;
-    padding: 20em 10em;
+    padding-top: 30%;
+    padding-left: 6em;
 }
 
 .left-side > h1 {
+    position: relative;
+    display: inline-block;
     font-size: 80px;
     font-weight: 700;
     font-family: "League Spartan", sans-serif;
@@ -60,6 +65,56 @@ header > img {
 
 .left-side > h1 > span {
     color: var(--secondary-color);
+}
+
+.left-side > a {
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    font-family: "League Spartan", sans-serif;
+    padding: 1.5em 1em;
+    border: 3px solid var(--primary-color);
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: 0.3s ease all;
+    user-select: none;
+    width: 25em;
+    z-index: 1;
+}
+
+.left-side > a:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: var(--primary-color);
+    z-index: -1;
+}
+
+.left-side > a:hover, .left-side > a:focus {
+    color: white;
+    cursor: pointer;
+}
+
+.left-side > a:hover:before, .left-side > a:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.left-side > a:active {
+    transform: scale(0.9);
 }
 
 .right-side {
@@ -73,5 +128,4 @@ header > img {
     position: relative;
     width: 8em;
     right: 5em;
-    mix-blend-mode: screen;
 }
