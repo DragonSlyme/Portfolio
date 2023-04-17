@@ -45,7 +45,7 @@ nav {
 ul > li:nth-child(1) {
     display: inline-block;
     margin-left: 3em;
-    margin-right: 16em;
+    margin-right: 12.8vw;
 }
 
 ul > li {
@@ -217,7 +217,6 @@ header > img {
     position: relative;
     width: 40em;
     top: 1em;
-    right: 3em;
     filter: drop-shadow(2em 0 1.5em rgba(51, 26, 84, 0.4));
 }
 
@@ -227,7 +226,7 @@ main {
     position: relative;
 }
 
-main > article:nth-child(3) {
+main > #competences {
     padding: 15em 10vw;
     background-color: var(--off-white);
 }
@@ -250,11 +249,21 @@ main > article > h2 {
     filter: drop-shadow(0 0 0.2em rgba(51, 26, 84, 0.4));
 }
 
-.competences {
+#competences {
     text-align: center;
 }
 
-main > .competences > h2 {
+#competences > h2 {
+    margin-bottom: 1em;
+}
+
+#competences > section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+main > #competences > h2 {
     color: var(--primary-color);
 }
 
@@ -377,6 +386,62 @@ input[type=radio] {
     position: absolute;
     width: 100%;
     bottom: 43em;
+}
+
+.flip-card {
+    position: relative;
+    background-color: transparent;
+    width: 190px;
+    height: 254px;
+    margin: 2em 0;
+    perspective: 1000px;
+    font-family: "Libre Baskerville", serif;
+    z-index: 10;
+}
+
+.title {
+    font-size: 1.4em;
+    font-weight: 900;
+    text-align: center;
+    font-family: "League Spartan", sans-serif;
+    margin: 0;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+}
+
+.flip-card-front {
+    background: linear-gradient(120deg, var(--secondary-color) 60%, var(--primary-color) 88%);
+    color: var(--off-white);
+}
+
+.flip-card-back {
+    background: linear-gradient(120deg, var(--primary-color) 30%, var(--blob-color) 88%);
+    color: white;
+    transform: rotateY(180deg);
 }
 
 #blob {

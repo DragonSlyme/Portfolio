@@ -7,7 +7,7 @@ let totalScrollY = 0;
 function updateTotalScrollY(){
     totalScrollY = window.scrollY + clientScrollY;
 
-    if ((totalScrollY > 1220 && totalScrollY < 2120)) {
+    if ((totalScrollY > 1220 && totalScrollY < 1900)) {
         blob.animate({
             left: `${clientX}px`,
             top: `${totalScrollY - 980}px`
