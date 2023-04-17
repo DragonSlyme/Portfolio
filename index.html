@@ -19,14 +19,13 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
     <nav>
         <ul>
             <li><a href="index.html">@jules-autret</a></li>
-            <li><a href="#about">À propos</a></li>
+            <li><a href="#monunivers">À propos</a></li>
             <li><a href="#skills">Compétences</a></li>
             <li><a href="#projects">Projets</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -40,6 +39,7 @@
                     étudiant développeur
                 </h1>
                 <a href="#monunivers">Découvrir mes projets</a>
+                <a href="cv/CV-JulesAUTRET_compressed.pdf" download>CV</a>
             </div>
         </section>
         <section class="right-side">
@@ -50,9 +50,50 @@
     </header>
 
     <main>
-        <h2 id="monunivers" class="highlight">Mon univers</h2>
-        <p><strong>J</strong>eune développeur et étudiant je suis passionné par le dévelopemment algorthmique et logiciel, le design d'interface et l'optimisation</p>
-        <p>Porro iure quia aliquid et quidem quis inventore dolores id, ipsam sunt facere sapiente cupiditate? Quos neque sequi, quia officia soluta repellat!</p>
+        <article id="monunivers">
+            <h2 class="highlight shadow-text">Mon univers 🪐</h2>
+            <section>
+                <p>
+                <strong>J</strong>eune développeur et étudiant je suis passionné par le dévelopemment et logiciel, le design d'interface et l'optimisation <br><br>
+                <strong>U</strong>tilisant une grande variété de langage, je suis capable de résoudre de problème complexe et de produire des applications fiables <br><br>
+                <strong>L</strong>'une de mes principales qualités est mon sens du détail, j'aime ajouté la petite touche qui fait la différence <br><br>
+                <strong>E</strong>n plus de cela, j'aime passer mon temps en réalisant des photomontages et de temps à autre en jouant du piano <br><br>
+                <strong>S</strong>i vous aviez encore un doute sur ma flexibilité d'esprit, je vous mets au défi de trouver tous mes secrets <br>
+                </p>
+                <div class="carousel">
+                    <input type="radio" name="slider" id="item-1" checked>
+                    <input type="radio" name="slider" id="item-2">
+                    <input type="radio" name="slider" id="item-3">
+                    <div class="cards">
+                    <label class="card" for="item-1" id="song-1">
+                        <img src="images/TerrificOcean.png" alt="TerrificOcean">
+                    </label>
+                    <label class="card" for="item-2" id="song-2">
+                        <img src="images/FromTheSpace2.png" alt="FromTheSpace">
+                    </label>
+                    <label class="card" for="item-3" id="song-3">
+                        <img src="images/MozART.png" alt="MozART">
+                    </label>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <img src="images/waves.svg" alt="waves" class="separator">
+
+        <article class="competences">
+            <h2 id="monunivers" class="highlight-light">Mes compétences </h2>
+        </article>
+
+        <img src="images/waves.svg" alt="waves" class="separator-end">
+
+        <article>
+            <h2 id="monunivers" class="highlight">Mon univers 🪐</h2>
+        </article>
+
+        <div id="blob"></div>
+        <div id="blob-blur"></div>
+        <script src="blob.js"></script>
     </main>
 </body>
 </html>
