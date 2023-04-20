@@ -7,7 +7,7 @@
 
     if (!empty($email) && !empty($message)) {
         if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            $to = "julesatt.pro@gmail.com";
+            $to = "dragonslyme@protonmail.com";
             $subject = "De: $name <$email>";
             if (!empty($website)) {
                 $body = "Nom: $name\nEmail: $email\nTéléphone: $phone\nSite web: $website\nMessage:\n$message";
