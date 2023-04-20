@@ -3,7 +3,7 @@ const statutTxt = form.querySelector('.submit span');
 
 form.onsubmit = (e)=>{
     e.preventDefault(); // Prevent form from submitting
-    statutTxt.style.color
+    statutTxt.style.color = "#F24C4C"
     statutTxt.style.display = 'block'; // Show status text
 
     let xhr = new XMLHttpRequest(); // Create XML object
