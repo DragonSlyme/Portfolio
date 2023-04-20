@@ -506,6 +506,58 @@ input[type=radio] {
     border-radius: 1em;
 }
 
+.field > input {
+    position: relative;
+    width: 100%;
+    padding: 1.5em 0 1.5em 4em;
+    margin-bottom: 2em;
+    font-family: "Libre Baskerville", serif;
+    font-size: 14px;
+    border-radius: 1em;
+    border: none;
+    filter: drop-shadow(0 0.4em 0.1em rgba(51, 26, 84, 0.2));
+    z-index: 10;
+}
+
+.field > input:focus {
+    outline: var(--secondary-color) 2px solid;
+}
+
+.field > svg, .message > svg {
+    position: absolute;
+    transform: translateY(40%);
+    color: white;
+    left: 11%;
+    filter: invert(50%);
+    z-index: 11;
+    width: 30px;
+}
+
+.message > textarea {
+    position: relative;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 4em;
+    height: 10em;
+    border-radius: 1em;
+    padding: 1em 4em;
+    margin-bottom: 2em;
+    border: none;
+    font-family: "Libre Baskerville", serif;
+    font-size: 14px;
+    filter: drop-shadow(0 0.4em 0.1em rgba(51, 26, 84, 0.2));
+    z-index: 10;
+}
+
+.message > textarea:focus {
+    outline: var(--secondary-color) 2px solid;
+}
+
+.submit > input {
+    position: relative;
+    z-index: 10;
+}
+
 footer {
     display: flex;
     align-items: center;
