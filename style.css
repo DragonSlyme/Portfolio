@@ -12,6 +12,8 @@
     --dark: #1E1E1E;
     --blob-color: #17093d;
     --blob-size: 300px;
+    --valide: #49C65E;
+    --invalide: #F24C4C;
 }
 
 /* RESET */
@@ -555,7 +557,28 @@ input[type=radio] {
 
 .submit > input {
     position: relative;
+    width: 100%;
+    padding: 1em 0;
+    border-radius: 1em;
+    border: none;
+    background-color: var(--secondary-color);
+    font-family: "Libre Baskerville", serif;
+    font-size: 14px;
+    color: var(--off-white);
+    margin-bottom: 1.5em;
+    filter: drop-shadow(0 0.4em 0 var(--primary-color));
     z-index: 10;
+}
+
+.submit > input:active {
+    transform: translateY(0.4em);
+    filter: drop-shadow(0 0 0 var(--primary-color));
+}
+
+.submit > span {
+    font-family: "Libre Baskerville", serif;
+    font-size: 16px;
+    color: var(--valide);
 }
 
 footer {
