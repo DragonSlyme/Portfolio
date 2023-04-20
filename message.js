@@ -1,8 +1,6 @@
 const form = document.querySelector('form');
 const statutTxt = form.querySelector('.submit span');
 
-console.log("Prout");
-
 form.onsubmit = (e)=>{
     e.preventDefault(); // Prevent form from submitting
     statutTxt.style.display = 'block'; // Show status text
@@ -19,5 +17,5 @@ form.onsubmit = (e)=>{
         }
     }
     let formData = new FormData(form); // Create new FormData object
-    xhr.send(formData); // Send the form data to php
+    xhr.send(); // Send the form data to php
 }
