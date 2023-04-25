@@ -688,7 +688,8 @@ footer > a > svg {
         width: 100%;
         max-height: 0;
         overflow: hidden;
-        right: 0;
+        /* TEST */
+        right: 10px;
     }
 
     .menu > ul {
