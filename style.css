@@ -734,6 +734,15 @@ footer > a > svg {
     }
 }
 
+.seo {
+    font-style: normal;
+    font-weight: normal;
+}
+
+.bold {
+    font-weight: bold;
+}
+
 @media screen and (max-width: 1024px) {
     main > article {
         padding: 10em 10vw;
