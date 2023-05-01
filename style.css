@@ -645,6 +645,15 @@ footer > a > svg {
 	position: absolute;
 }
 
+.seo {
+    font-style: normal;
+    font-weight: normal;
+}
+
+.bold {
+    font-weight: bold;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 1544px) {
@@ -655,33 +664,29 @@ footer > a > svg {
 }
 
 @media screen and (max-width: 1440px) {
-    .right-side {
-        display: none;
+    .right-side > img:nth-child(2) {
+        top: -1.2em;
+        right: 2em;
+        width: 34em;
     }
 
     .left-side {
-        width: 100%;
-        padding-top: 25vh;
+        padding-top: 12em;
         padding-left: 0;
     }
 
-    .left-side > div {
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        flex-direction: column;
+    .left-side > div{
+        width: min-content;
+        margin: 0 auto;
+        transform: translateX(-4em);
     }
 
-    .left-side > div > a, .left-side > div > a:nth-child(3) {
+    .left-side > div > a{
         width: 100%;
     }
 
-    .left-side > div > h1 {
-        font-size: 54px;
-    }
-
-    .left-side > div > h1 > span {
-        font-size: 90px;
+    .left-side > div > a:nth-child(3) {
+        width: 100%;
     }
 
     .menu {
@@ -734,13 +739,45 @@ footer > a > svg {
     }
 }
 
-.seo {
-    font-style: normal;
-    font-weight: normal;
+@media screen and (max-width: 1352px) {
+    .right-side > img:nth-child(2) {
+        top: -0.8em;
+        right: 2em;
+        width: 32em;
+    }
 }
 
-.bold {
-    font-weight: bold;
+@media screen and (max-width: 1288px) {
+    .right-side {
+        display: none;
+    }
+
+    .left-side {
+        width: 100%;
+        padding-top: 25vh;
+        padding-left: 0;
+    }
+
+    .left-side > div {
+        width: 38em;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        transform: translateX(0);
+    }
+
+    .left-side > div > a, .left-side > div > a:nth-child(3) {
+        width: 100%;
+    }
+
+    .left-side > div > h1 {
+        font-size: 54px;
+    }
+
+    .left-side > div > h1 > span {
+        font-size: 90px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -798,6 +835,10 @@ footer > a > svg {
 @media screen and (max-width: 846px) {
     #competences > section {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .left-side > div {
+        width: auto;
     }
 
     .left-side > div > h1 {
