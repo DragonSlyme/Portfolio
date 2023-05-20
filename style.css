@@ -813,6 +813,7 @@ footer > a > svg {
         grid-column: 1;
         grid-row: 2;
         margin-top: 2em;
+        margin-right: 0;
     }
 
     .projets > section:nth-child(even) > img {
