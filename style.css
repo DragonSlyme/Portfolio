@@ -620,6 +620,16 @@ footer > a > svg {
     filter: invert();
 }
 
+#detail {
+    height: 100vh;
+    padding-top: 10em;
+    text-align: center;
+}
+
+#detail > section > p {
+    text-align: justify;
+}
+
 #blob {
 	animation: rotate360 20s infinite;
 	background: var(--blob-color);
