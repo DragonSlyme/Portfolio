@@ -248,7 +248,6 @@ header > img {
 .right-side > img:nth-child(1) {
     position: relative;
     width: 8em;
-    bottom: 1.2em;
     right: 5em;
     filter: drop-shadow(-1em 0 0.4em rgba(51, 26, 84, 0.12));
 }
@@ -720,14 +719,14 @@ footer > a > svg {
 
 @media screen and (max-width: 1544px) {
     .right-side > img:nth-child(2) {
-        top: -1.4em;
+        top: 0.8em;
         width: 36em;
     }
 }
 
 @media screen and (max-width: 1440px) {
     .right-side > img:nth-child(2) {
-        top: -1.2em;
+        top: 1em;
         right: 2em;
         width: 34em;
     }
@@ -803,7 +802,7 @@ footer > a > svg {
 
 @media screen and (max-width: 1352px) {
     .right-side > img:nth-child(2) {
-        top: -0.8em;
+        top: 1.4em;
         right: 2em;
         width: 32em;
     }
