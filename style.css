@@ -27,6 +27,26 @@
     background: var(--secondary-color);
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+	background-color: #F5F5F5;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: var(--secondary-color);
+}
+
 /* GLOBAL */
 html {
 	scroll-behavior: smooth;
@@ -504,6 +524,7 @@ input[type=radio] {
 .projets > section > p {
     font-family: "Libre Baskerville", serif;
     font-size: 24px;
+    text-align: left;
 }
 
 .projets > section:nth-child(odd) > p {
@@ -621,13 +642,44 @@ footer > a > svg {
 }
 
 #detail {
-    height: 100vh;
     padding-top: 10em;
-    text-align: center;
+    padding-bottom: 6em;
+}
+
+#detail > section {
+    display: grid;
+}
+
+#detail > section > img {
+    grid-column: 2;
+    grid-row: 1 / 100;
+    width: 20em;
+    height: 85%;
+    object-fit: cover;
+    margin: 2em 0;
+}
+
+#detail > section > h3 {
+    font-family: "League Spartan", sans-serif;
+    color: var(--off-white);
+    font-size: 28px;
+    margin: 1em 0;
+    grid-column: 1;
+}
+
+#detail > section > p:nth-child(1) {
+    margin: 2em 0 0 0;
+}
+
+#detail > section > p:last-of-type {
+    margin: 0 0 4em 0;
 }
 
 #detail > section > p {
     text-align: justify;
+    margin: 0;
+    width: 90%;
+    grid-column: 1;
 }
 
 #blob {
@@ -836,6 +888,14 @@ footer > a > svg {
 
     .field > svg, .message > svg {
         left: 12%;
+    }
+
+    #detail > section > img {
+        display: none;
+    }
+
+    #detail > section > p {
+        width: 100%;
     }
 
     #blob, #blob-blur {
