@@ -515,9 +515,15 @@ input[type=radio] {
     color: var(--off-white);
 }
 
-.projets > section > img {
+.projets > section > a > img {
     width: 30em;
     height: 20em;
+    transition: .3s ease-in-out;
+}
+
+.projets > section > a > img:hover {
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .projets > section > p {
@@ -531,7 +537,7 @@ input[type=radio] {
     margin-left: 3em;
 }
 
-.projets > section:nth-child(odd) > img {
+.projets > section:nth-child(odd) > a > img {
     object-fit: cover;
     border-radius: 1em;
 }
@@ -542,7 +548,7 @@ input[type=radio] {
     margin-right: 3em;
 }
 
-.projets > section:nth-child(even) > img {
+.projets > section:nth-child(even) > a > img {
     grid-column: 2;
     object-fit: cover;
     border-radius: 1em;
@@ -640,16 +646,16 @@ footer > a > svg {
     filter: invert();
 }
 
-#detail {
+.detail {
     padding-top: 10em;
     padding-bottom: 6em;
 }
 
-#detail > section {
+.detail > section {
     display: grid;
 }
 
-#detail > section > img {
+.detail > section > img {
     grid-column: 2;
     grid-row: 1 / 100;
     width: 20em;
@@ -658,7 +664,7 @@ footer > a > svg {
     margin: 2em 0;
 }
 
-#detail > section > h3 {
+.detail > section > h3 {
     font-family: "League Spartan", sans-serif;
     color: var(--off-white);
     font-size: 28px;
@@ -666,19 +672,81 @@ footer > a > svg {
     grid-column: 1;
 }
 
-#detail > section > p:nth-child(1) {
+.detail > section > p:nth-child(1) {
     margin: 2em 0 0 0;
 }
 
-#detail > section > p:last-of-type {
+.detail > section > p:last-of-type {
     margin: 0 0 4em 0;
 }
 
-#detail > section > p {
+.detail > section > p {
     text-align: justify;
     margin: 0;
     width: 90%;
     grid-column: 1;
+}
+
+.projet {
+    padding-top: 10em;
+    padding-bottom: 6em;
+    text-align: center;
+}
+
+.projet > section > h3 {
+    font-family: "League Spartan", sans-serif;
+    color: var(--off-white);
+    font-size: 28px;
+    margin: 1em 0;
+    text-align: left;
+}
+
+.projet > section > h3:nth-child(1) {
+    margin: 2em 0 1em 0;
+}
+
+.projet > section > p {
+    text-align: justify;
+    margin: 0;
+    width: 100%;
+}
+
+.projet > section > p:last-of-type {
+    margin: 0 0 4em 0;
+}
+
+.competences-utilisees {
+    font-family: "Libre Baskerville", serif;
+    font-size: 22px;
+    color: var(--off-white);
+    text-align: left;
+    margin: 1em 0 1em 0;
+}
+
+.competences-utilisees > p > span {
+    padding: 0.5em;
+    border-radius: 100px;
+    font-size: 14px;
+    margin-left: 5px;
+    background-color: var(--secondary-color);
+}
+
+.realiser:before {
+    content: "Réaliser";
+}
+
+.realiser:hover:before {
+    content: "Réaliser un développement d'application";
+    cursor: pointer;
+}
+
+.optimiser:before {
+    content: "Optimiser";
+}
+
+.optimiser:hover:before {
+    content: "Optimiser des applications";
+    cursor: pointer;
 }
 
 #blob {
@@ -789,7 +857,7 @@ footer > a > svg {
         height: 30em;
     }
 
-    .projets > section > img {
+    .projets > section > a > img {
         width: 26em;
         height: 18em;
     }
@@ -863,7 +931,7 @@ footer > a > svg {
         margin-top: 2em;
     }
 
-    .projets > section:nth-child(odd) > img {
+    .projets > section:nth-child(odd) > a > img {
         object-fit: cover;
         border-radius: 1em;
         width: 100%;
@@ -877,7 +945,7 @@ footer > a > svg {
         margin-right: 0;
     }
 
-    .projets > section:nth-child(even) > img {
+    .projets > section:nth-child(even) > a > img {
         grid-column: 1;
         object-fit: cover;
         border-radius: 1em;
@@ -889,11 +957,11 @@ footer > a > svg {
         left: 12%;
     }
 
-    #detail > section > img {
+    .detail > section > img {
         display: none;
     }
 
-    #detail > section > p {
+    .detail > section > p {
         width: 100%;
     }
 

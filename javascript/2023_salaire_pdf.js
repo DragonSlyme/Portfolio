@@ -155,7 +155,6 @@ function fadeOutImage(opacity) {
     if (img.style.opacity >= 0) {
         setTimeout(() => { 
             img.style.opacity = opacity;
-            console.log(opacity);
             fadeOutImage(opacity - 0.0025);
         }, 20);
     }
@@ -166,7 +165,6 @@ function fadeInImage(opacity) {
     if (img.style.opacity <= 1) {
         setTimeout(() => {
             img.style.opacity = opacity;
-            console.log(opacity);
             fadeInImage(opacity + 0.0025);
         }, 20);
     }
