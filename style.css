@@ -756,6 +756,15 @@ footer > a > svg {
     cursor: pointer;
 }
 
+.conduire:before {
+    content: "Conduire";
+}
+
+.conduire:hover:before {
+    content: "Conduire un projet";
+    cursor: pointer;
+}
+
 .competences-utilisees > p > .langage {
     background-color: var(--call-to-action-color);
     color: var(--dark);
