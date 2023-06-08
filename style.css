@@ -659,7 +659,7 @@ footer > a > svg {
 }
 
 .one-page {
-    padding-bottom: 5.65em;
+    height: 93.3vh;
 }
 
 .detail > section {
@@ -734,6 +734,7 @@ footer > a > svg {
     margin: 1em 0 1em 0;
 }
 
+.competences-utilisees > p > a,
 .competences-utilisees > p > span {
     padding: 0.5em;
     border-radius: 100px;
@@ -798,6 +799,15 @@ footer > a > svg {
 
 .installer:hover:before {
     content: "Installer et configurer un poste de travail";
+    cursor: pointer;
+}
+
+.gerer:before {
+    content: "Gérer";
+}
+
+.gerer:hover:before {
+    content: "Gérer des données de l'information";
     cursor: pointer;
 }
 
@@ -887,6 +897,48 @@ footer > a > svg {
 
 .learn-more {
     color: #f5f5f5b2;
+}
+
+.popup {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    width: 80vw;
+    height: max-content;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    background-color: rgba(119, 67, 219, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 0.4em 2em rgba(51, 26, 84, 0.4);
+    z-index: 100;
+}
+
+.popup > h3 {
+    text-align: center;
+    font-family: "League Spartan", sans-serif;
+    font-size: 3em;
+    color: var(--off-white);
+    margin-top: 0.5em;
+}
+
+.popup  > p {
+    text-align: justify;
+    font-family: "Libre Baskerville", serif;
+    font-size: 1.4em;
+    color: var(--off-white);
+    margin: 2em 2em;
+    margin-bottom: 4em;
+}
+
+.popup > svg {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    width: 2em;
+    color: var(--off-white);
+    cursor: pointer;
 }
 
 #blob {
