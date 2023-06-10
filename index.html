@@ -111,7 +111,7 @@
 
         <!-- Section compétences -->
         <article id="competences">
-            <h2 class="highlight-light">Mes compétences</h2>
+            <h2 class="highlight-light">Mes outils</h2>
             <section>
                 <a href="competences/Langage-C" class="flip-card">
                     <div class="flip-card-inner">
@@ -300,9 +300,20 @@
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16"> <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/> </svg>
                 </section>
                 <section class="submit">
-                    <input type="submit" name="send" value="Envoyer">
+                    <section>
+                        <input type="submit" name="send" value="Envoyer">
+                        <a onclick="openPopup()">info</a>
+                    </section>
                     <span></span>
                 </section>
+
+                <aside class="popup">
+                    <h3>Contact</h3>
+                    <p style="text-align: center; margin-bottom: 0em;">Mail: julesatt.pro@gmail.com</p>
+                    <p style="text-align: center;">Téléphone: +33 7-67-87-58-00</p>
+                    <svg class="close" fill="#F5F5F5" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M18.8,16l5.5-5.5c0.8-0.8,0.8-2,0-2.8l0,0C24,7.3,23.5,7,23,7c-0.5,0-1,0.2-1.4,0.6L16,13.2l-5.5-5.5 c-0.8-0.8-2.1-0.8-2.8,0C7.3,8,7,8.5,7,9.1s0.2,1,0.6,1.4l5.5,5.5l-5.5,5.5C7.3,21.9,7,22.4,7,23c0,0.5,0.2,1,0.6,1.4 C8,24.8,8.5,25,9,25c0.5,0,1-0.2,1.4-0.6l5.5-5.5l5.5,5.5c0.8,0.8,2.1,0.8,2.8,0c0.8-0.8,0.8-2.1,0-2.8L18.8,16z"></path> </g></svg>
+                    <script src="../javascript/popup.js"></script>
+                </aside>
 
                 <script src="javascript/message.js"></script>
             </form>
